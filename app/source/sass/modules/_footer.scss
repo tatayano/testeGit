@@ -1,0 +1,24 @@
+#fo-footer {
+    @include background-image(linear-gradient(to top, white, #dddddd));
+    height: 52px;
+    padding-top: 10px;
+
+    .ico-telefonica {
+
+        img {
+            height: 14px;
+            width: 51px;
+        }
+
+    }
+
+    .ico-vivo-conectados {
+
+        img {
+            height: 9px;
+            width: 135px;
+        }
+
+    }
+
+}

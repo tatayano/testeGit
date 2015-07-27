@@ -1,0 +1,49 @@
+.fo-button {
+    background-color: $purple;
+    @include border-radius(6px);
+    color: $white;
+    display: block;
+    @extend %font-family-bold;
+    @include font-size(16);
+    line-height: 1em;
+    margin: 0 auto;
+    padding: 8px 0;
+    text-align: center;
+    text-decoration: none;
+
+    @include respond-to($orientation-landscape){
+        @include font-size(19);
+        padding: 10px 0;
+    }
+
+    img {
+        display: inline;
+    }
+
+}
+
+.fo-button-back {
+    @extend %font-family-bold;
+    @include font-size(14);
+    color: $orange-light;
+    text-decoration: none;
+}
+
+.fo-button-carousel {
+    background-color: $purple;
+    border: solid 1px $purple;
+    color: $orange-light;
+    position: absolute;
+    text-align: center;
+    z-index: 5;
+
+    img {
+        padding-top: 50%;
+        width: 8px;
+
+        @include respond-to($orientation-landscape) {
+            width: 12px;
+        }
+    }
+
+}

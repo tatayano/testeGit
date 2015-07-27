@@ -1,0 +1,36 @@
+#fo-carousel {
+
+    .fo-ct-carousel {
+
+        article {
+            padding: 0 percent(25, 320);
+        }
+
+        h2 {
+            @include font-size(18);
+            padding-bottom: 0;
+        }
+
+        h3 {
+            @include font-size(15);
+            padding-bottom: 15px;
+        }
+
+        p {
+            @include font-size(14);
+        }
+
+        figure {
+            padding-top: 27px;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: percent(240, 270);
+        }
+
+    }
+
+}

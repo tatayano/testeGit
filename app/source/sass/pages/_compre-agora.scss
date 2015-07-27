@@ -1,0 +1,221 @@
+#fo-compre-agora {
+
+    article {
+        clear: both;
+        overflow: hidden;
+
+
+        @include respond-to($orientation-landscape){
+            height: 304px;
+            margin: 0 auto;
+            width: 375px;
+        }
+
+        &:last-of-type {
+            margin-top: 50px;
+
+            @include respond-to($orientation-landscape){
+                margin-top: 35px;
+            }
+
+        }
+
+        h3 {
+            @include font-size(15);
+            padding-bottom: 5px;
+
+            @include respond-to($orientation-landscape){
+                @include font-size(18);
+                padding-bottom: 8px;
+            }
+
+        }
+
+        p {
+            color: $grey;
+            @include font-size(10);
+            line-height: 12px;
+
+            @include respond-to($orientation-landscape){
+                @include font-size(13);
+            }
+
+        }
+
+    }
+
+    figure,
+    .fo-box-valor {
+        float: left;
+    }
+
+    figure {
+        left: 0;
+        position: relative;
+        max-width: 100px;
+        width: percent( 100, 274 );
+        z-index: 2;
+
+        @include respond-to($orientation-landscape) {
+            max-width: 140px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .fo-box-valor {
+        left: -9px;
+        position: relative;
+
+        @include respond-to($orientation-landscape) {
+            left: -12px;
+        }
+
+        .fo-bg-scale {
+            background-color: $orange-medium;
+            @include border-radius(7px);
+            height: 129px;
+            margin-top: 27px;
+            @include skew( -13deg, 0 );
+            width: 164px;
+
+            @include respond-to($orientation-landscape){
+                height: 177px;
+                margin-top: 36px;
+                width: 224px;
+            }
+
+        }
+
+        .fo-txt-scale {
+            left: 20px;
+            position: absolute;
+            top: 44px;
+            width: percent(140, 164);
+
+            @include respond-to($orientation-landscape){
+                left: 30px;
+                top: 49px;
+            }
+
+            h4,
+            .fo-button {
+                @include font-size(10);
+
+                @include respond-to($orientation-landscape){
+                    @include font-size(13);
+                }
+
+            }
+
+            h4,
+            h5 {
+                float: left;
+            }
+
+            h4 {
+                color: $purple;
+
+                span {
+                    display: block;
+                    @extend %font-family-bold;
+                    @include font-size(30);
+
+                    @include respond-to($orientation-landscape){
+                        @include font-size(33);
+                    }
+
+                }
+
+            }
+
+            h5 {
+                color: $white;
+                @include font-size(53);
+                line-height: 35px;
+
+                @include respond-to($orientation-landscape){
+                    @include font-size(56);
+                    line-height: 45px;
+                }
+
+                strong {
+                    letter-spacing: -6px;
+                }
+
+                sup {
+                    @include font-size(23);
+                    left: 90px;
+                    position: absolute;
+                    top: -9px;
+
+                    @include respond-to($orientation-landscape){
+                        @include font-size(26);
+                        left: 96px;
+                    }
+
+                }
+
+            }
+
+            p {
+                clear: both;
+                color: $white;
+                padding-bottom: 3px;
+
+                @include respond-to($orientation-landscape){
+                    padding: 15px 0;
+                }
+
+            }
+
+            .fo-button {
+                @include border-radius(4px);
+                margin: 0;
+                width: 100px;
+
+                @include respond-to($orientation-landscape) {
+                    width: 148px;
+                }
+
+                img {
+                    height: 14px;
+                    vertical-align: text-top;
+                    width: 14px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .fo-txt-roles {
+        margin-top: 10px;
+
+        p {
+            @include font-size(10);
+            text-align: center;
+
+            &:first-child {
+                color: $purple;
+                padding: 20px;
+            }
+
+            &:last-of-type {
+                color: $black;
+                text-align: justify;
+            }
+
+            a {
+                color: $purple;
+            }
+
+        }
+
+    }
+
+}

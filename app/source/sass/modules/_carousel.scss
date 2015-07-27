@@ -1,0 +1,109 @@
+#fo-carousel {
+    background-color: $white;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    @include respond-to($orientation-landscape){
+        position: relative;
+    }
+
+    .fo-button-back {
+        float: right;
+    }
+
+    h2 {
+        clear: both;
+    }
+
+    .fo-ct-text {
+        padding-top: 30px;
+    }
+
+    .fo-ct-carousel {
+        height: 370px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        @include respond-to($orientation-landscape){
+            height: 315px;
+        }
+
+        .mask {
+            background-color: $white;
+            height: 370px;
+            width: percent( 3200, 320 );
+        }
+
+        article {
+            height: 370px;
+            float: left;
+            width: 10%;
+        }
+
+        h2 {
+            @extend %font-family-bold;
+            @include font-size(17);
+            padding-bottom: 0;
+        }
+
+        h3 {
+            @include font-size(14);
+            padding-bottom: 15px;
+        }
+
+        p {
+            @include font-size(13);
+        }
+
+        h2,
+        h3,
+        p {
+            margin: 0 auto;
+            width: percent( 270, 320 );
+        }
+
+        figure {
+            padding-top: 27px;
+            width: 100%;
+
+            @include respond-to($orientation-landscape){
+                padding-top: 0;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 250px;
+                width: percent(240, 270);
+            }
+
+        }
+
+    }
+
+    .fo-prev,
+    .fo-next {
+        height: 43px;
+        top: 50%;
+        width: 23px;
+
+        @include respond-to($orientation-landscape) {
+            height: 63px;
+            width: 35px;
+        }
+
+    }
+
+    .fo-prev {
+        @include border-radius(0px 73px 73px 0px, 0px 73px 73px 0px);
+        left: 0px;
+    }
+
+    .fo-next {
+        @include border-radius(73px 0px 0px 73px, 73px 0px 0px 73px);
+        right: 0px;
+    }
+
+}

@@ -1,0 +1,38 @@
+// Compass
+@import
+    'compass',
+    'compass/reset';
+
+// Sprite
+// $tmp-sprite-dimensions: true;
+// $tmp-spacing: 5px;
+// @import 'tmp/*.png';
+
+// Utils
+@import
+    'utils/font',
+    'utils/functions',
+    'utils/media',
+    'utils/variables';
+
+// Base
+@import
+    'base/base',
+    'base/normalize';
+
+// Components
+@import
+    'components/buttons';
+
+// Modules
+@import
+    'modules/header',
+    'modules/carousel',
+    'modules/footer';
+
+// Pages
+@import
+    'pages/home',
+    'pages/vantagens',
+    'pages/descubra',
+    'pages/compre-agora';

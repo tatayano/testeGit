@@ -1,0 +1,42 @@
+#fo-descubra {
+    height: 100%;
+
+    .fo-ct-text {
+        padding: 20px 4.5% 30px 4.5%;
+    }
+
+    h1 {
+        @include font-size(20);
+
+        strong {
+            color: $purple;
+            display: block;
+            @include font-size(29);
+        }
+
+    }
+
+    #fo-ct-video {
+        background: url(../img/bg-video.png) no-repeat left top;
+        background-size: cover;
+        height: 164px;
+        margin: 0 auto 55px auto;
+        position: relative;
+        width: 292px;
+
+        .fo-play,
+        iframe {
+            height: 120px;
+            left: 55px;
+            position: absolute;
+            top: 15px;
+            width: 179px;
+        }
+
+        iframe {
+            display: none;
+        }
+
+    }
+
+}

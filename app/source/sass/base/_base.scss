@@ -1,0 +1,19 @@
+* {
+    @include box-sizing('border-box');
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: $grey-light url(../img/bg.jpg) no-repeat center top;
+    @extend %font-family-book;
+    position: relative;
+    width: 100%;
+}
+
+#fo-content {
+    clear: both;
+}

@@ -1,0 +1,47 @@
+#fo-home {
+
+    .fo-highlight {
+
+        img {
+            max-width: 768px;
+            width: 100%;
+        }
+
+    }
+
+    .fo-title-button {
+        text-align: center;
+        padding-bottom: 5px;
+
+        small {
+            @include font-size(10);
+
+            @include respond-to($orientation-landscape){
+                @include font-size(13);
+            }
+
+            a {
+                color: $orange-light;
+            }
+
+        }
+
+    }
+
+    .fo-button {
+        width: percent( 143, 274 );
+
+        img {
+            height: 14px;
+            width: 14px;
+
+             @include respond-to($orientation-landscape){
+                height: 16px;
+                width: 16px;
+            }
+
+        }
+
+    }
+
+}

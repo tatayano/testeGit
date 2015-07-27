@@ -1,0 +1,40 @@
+#fo-vantagens {
+
+    .fo-ct-text {
+        padding-top: 35px;
+
+        ul {
+            overflow: hidden;
+
+            @include respond-to($orientation-landscape){
+                margin-top: 25px;
+            }
+
+        }
+
+        li {
+            float: left;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 33.3%;
+
+            @include respond-to($orientation-landscape){
+                margin-bottom: 30px;
+            }
+
+        }
+
+        a {
+            display: block;
+            width: 100%;
+
+            img {
+                max-width: 82px;
+                width: percent( 62, 91 );
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,71 @@
+#fo-header {
+
+    .fo-top-bar {
+        background-color: #6d2f8f;
+        height: 52px;
+    }
+
+    .fo-vivo-header {
+
+        img {
+            height: 24px;
+            width: 62px;
+        }
+
+    }
+
+    .fo-firefoxos-header {
+
+        img {
+            height: 25px;
+            width: 79px;
+        }
+
+    }
+
+    .fo-nav {
+        overflow: hidden;
+
+        li {
+            background-color: $white;
+            border-right: solid 1px #bebebe;
+            float: left;
+            height: 40px;
+            width: 25%;
+
+            &:last-child {
+                border-right: none;
+
+                img {
+                    padding-top: 9px;
+                }
+
+            }
+
+            a {
+                display: block;
+                height: 40px;
+                text-align: center;
+                width: 100%;
+
+                img {
+                    padding-top: 11px;
+                    width: 25px;
+                }
+
+            }
+
+        }
+
+        .active {
+            background-color: $orange-dark;
+            border-color: $orange-dark;
+        }
+
+    }
+
+    .hideNav {
+        display: none;
+    }
+
+}
